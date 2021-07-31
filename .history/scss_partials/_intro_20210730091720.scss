@@ -1,0 +1,68 @@
+.intro {
+	height: 81.5vh;
+	background-image: url(../images/bg-pattern-intro.svg),
+		linear-gradient(to right, $very-light-red-gradient, $light-red-gradient);
+	background-position: center center;
+	border-bottom-left-radius: 10rem;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-light;
+	color: $white;
+	font-size: 1.8rem;
+	header {
+		width: 100%;
+	}
+	&__navigation {
+		width: 77.5%;
+		margin: auto;
+		padding: 6.2rem 0;
+		display: flex;
+		justify-content: space-between;
+		&__logo {
+			display: flex;
+		}
+		ul {
+			display: flex;
+			align-items: center;
+		}
+		li {
+			margin-left: 5rem;
+		}
+
+		a {
+			color: $white;
+		}
+		&__login {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__description {
+		width: 55%;
+		margin: auto;
+		h1 {
+			font-size: 6rem;
+			font-weight: $font-weight-secondary-light;
+		}
+		p {
+		}
+		&__buttons {
+			display: flex;
+		}
+	}
+}
+.button {
+	cursor: pointer;
+	padding: 1.5rem 4rem;
+	border-radius: 3rem;
+}
+.button--2 {
+	background-color: $white;
+	color: $light-red;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-bold;
+	transition: all 0.3s ease-in-out;
+}
+.button--2:hover {
+	background-color: hsla(0, 0%, 100%, 0.267);
+	color: $white;
+}

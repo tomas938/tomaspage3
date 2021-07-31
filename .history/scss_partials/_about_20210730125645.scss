@@ -1,0 +1,47 @@
+.about {
+	padding-bottom: 11rem;
+	font-family: $font-primary;
+	background-image: url(../images/illustration-editor-desktop.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 0rem right -25rem;
+	@media only screen and (max-width: 1400px) {
+		background-position: bottom 0rem right -45rem;
+	}
+	@media only screen and (max-width: 1000px) {
+		background-position: bottom -5rem right -55rem;
+	}
+	@media only screen and (max-width: 900px) {
+		background-image: url("");
+	}
+	h2 {
+		text-align: center;
+		font-size: 4rem;
+		color: $very-dark-blue;
+		padding: 17rem 0 10rem 0;
+	}
+	&__container {
+		&__items {
+			width: 50%;
+			@media only screen and (max-width: 900px) {
+				width: 80%;
+				margin: auto;
+			}
+		}
+		.content {
+			margin-left: 17rem;
+			@media only screen and (max-width: 1400px) {
+				margin-left: 5rem;
+			}
+		}
+		h3 {
+			font-size: 3rem;
+			color: $very-dark-blue;
+		}
+		p {
+			color: $very-dark-grayish-blue;
+			line-height: 3rem;
+			padding: 4rem 0 8rem;
+			font-size: 1.7rem;
+		}
+	}
+}

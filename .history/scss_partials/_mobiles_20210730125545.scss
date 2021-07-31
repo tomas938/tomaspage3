@@ -1,0 +1,55 @@
+.mobiles {
+	margin-top: 10rem;
+	background-image: url(../images/bg-pattern-circles.svg),
+		linear-gradient(to right, $very-dark-gray-blue, $very-dark-desaturated-blue);
+	// @media only screen and (max-width: 900px) {
+	// 	background-image: url("");
+	// }
+	background-repeat: no-repeat;
+	background-position: 25% 75%;
+	border-bottom-left-radius: 8rem;
+	border-top-right-radius: 8rem;
+	font-family: $font-primary;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: relative;
+	color: $white;
+	height: 35.1rem;
+	img {
+		position: absolute;
+		left: 8%;
+		@media only screen and (max-width: 1150px) {
+			left: 1%;
+		}
+		@media only screen and (max-width: 1000px) {
+			transform: scale(0.75);
+			top: -42%;
+			left: -5%;
+		}
+	}
+	&__content {
+		margin-right: 17rem;
+		padding: 10rem 0;
+		width: 40%;
+		@media only screen and (max-width: 1350px) {
+			margin-right: 5rem;
+		}
+		@media only screen and (max-width: 1000px) {
+			margin-right: 2rem;
+			width: 50%;
+		}
+
+		h2 {
+			font-size: 4rem;
+			font-weight: $font-weight-primary-bold;
+		}
+		p {
+			margin-top: 1rem;
+			font-size: 1.7rem;
+			line-height: 3rem;
+			font-weight: $font-weight-primary-bold;
+			color: $grayish-blue;
+		}
+	}
+}

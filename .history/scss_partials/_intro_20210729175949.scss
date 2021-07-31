@@ -1,0 +1,23 @@
+.intro {
+	height: 81.5vh;
+	background-image: url(../images/bg-pattern-intro.svg),
+		linear-gradient(to right, $very-light-red-gradient, $light-red-gradient);
+	background-position: center center;
+	border-bottom-left-radius: 10rem;
+	header {
+		width: 100%;
+	}
+	&__navigation {
+		width: 78%;
+		margin: auto;
+		display: flex;
+		&__logo {
+		}
+	}
+	&__login {
+		.login {
+		}
+		.signup {
+		}
+	}
+}

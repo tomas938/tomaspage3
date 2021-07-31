@@ -1,0 +1,204 @@
+.intro {
+	height: 82vh;
+	background-image: url(../images/bg-pattern-intro.svg),
+		linear-gradient(to right, $very-light-red-gradient, $light-red-gradient);
+	background-position: center center;
+	border-bottom-left-radius: 10rem;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-light;
+	color: $white;
+	font-size: 1.8rem;
+	header {
+		width: 100%;
+	}
+	&__navigation {
+		width: 77.5%;
+		@media only screen and (max-width: 900px) {
+			width: 90%;
+		}
+		margin: auto;
+		padding: 6.2rem 0;
+		display: flex;
+		justify-content: space-between;
+		&__logo {
+			display: flex;
+		}
+		ul {
+			display: flex;
+			align-items: center;
+			@media only screen and (max-width: 900px) {
+				display: none;
+			}
+		}
+		li {
+			margin-left: 5rem;
+		}
+
+		a {
+			color: $white;
+		}
+		&__login {
+			display: flex;
+			align-items: center;
+			@media only screen and (max-width: 900px) {
+				display: none;
+			}
+		}
+		&__mobile {
+			display: flex;
+			display: none;
+			@media only screen and (max-width: 900px) {
+				display: flex;
+			}
+			align-items: center;
+			flex-direction: column;
+			justify-content: center;
+			span {
+				width: 3.5rem;
+				height: 0.4rem;
+				background-color: $white;
+				margin-top: 0.7rem;
+			}
+		}
+		.mobile__links {
+			visibility: hidden;
+			position: absolute;
+			background-color: $white;
+			padding: 5rem;
+			height: 40rem;
+			top: 15%;
+			left: 50%;
+			width: 90%;
+			transform: translateX(-50%);
+			font-family: $font-primary;
+			font-weight: $font-weight-primary-bold;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin: auto;
+
+			svg {
+				transform: scale(1);
+				fill: $light-red;
+				cursor: pointer;
+			}
+			ul {
+			}
+			li {
+				margin-bottom: 4rem;
+			}
+			a {
+				color: $very-dark-black-blue;
+				font-size: 2.2rem;
+			}
+			.buttons {
+				width: 100%;
+				border-top: 3px solid $grayish-blue;
+			}
+			.button--1 {
+				width: 15rem;
+				margin: auto;
+				font-size: 2.2rem;
+				color: $very-dark-black-blue;
+			}
+			.button--2 {
+				text-align: center;
+				width: 15rem;
+				margin: auto;
+				color: $white;
+				background: linear-gradient(to right, $very-light-red, $light-red);
+			}
+		}
+		.active {
+			visibility: visible;
+			li {
+				margin-left: 0rem;
+			}
+		}
+	}
+	&__description {
+		h1 {
+			padding: 5rem 0 3rem 0;
+			font-size: 6.7rem;
+			text-align: center;
+			font-family: $font-primary;
+			font-weight: $font-weight-primary-bold;
+			@media only screen and (max-width: 900px) {
+				width: 90%;
+				margin: auto;
+			}
+			@media only screen and (max-width: 800px) {
+				font-size: 4.7rem;
+			}
+			@media only screen and (max-width: 565px) {
+				font-size: 3.7rem;
+			}
+		}
+		p {
+			text-align: center;
+			@media only screen and (max-width: 900px) {
+				width: 90%;
+				margin: auto;
+			}
+		}
+		&__buttons {
+			padding: 5rem 0;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+.button {
+	cursor: pointer;
+	padding: 1.5rem 4rem;
+	border-radius: 3rem;
+}
+.button--2 {
+	background-color: $white;
+	color: $light-red;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-bold;
+	transition: all 0.3s ease-in-out;
+}
+.button--2:hover {
+	background-color: hsla(0, 0%, 100%, 0.267);
+	color: $white;
+}
+.button--3 {
+	background-color: $white;
+	color: $light-red;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-bold;
+	transition: all 0.3s ease-in-out;
+	padding: 1.5rem 2.5rem;
+	@media only screen and (max-width: 300px) {
+		padding: 1.5rem 1rem;
+	}
+}
+.button--3:hover {
+	background-color: hsla(0, 0%, 100%, 0.267);
+	color: $white;
+}
+.button--4 {
+	margin-left: 1.5rem;
+	border: 1px solid $white;
+	padding: 1.5rem 2.5rem;
+	@media only screen and (max-width: 300px) {
+		padding: 1.5rem 1rem;
+	}
+}
+.flip {
+	transform: rotate(180deg) !important;
+}
+.dropdown {
+	display: none !important;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	background-color: $grayish-blue;
+	padding: 2rem 10rem;
+	a {
+		margin-top: 3rem;
+	}
+}

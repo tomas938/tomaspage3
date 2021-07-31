@@ -1,0 +1,69 @@
+footer {
+	padding: 10rem 15rem;
+	background-color: $very-dark-black-blue;
+	color: $grayish-blue;
+	border-top-right-radius: 15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: $font-primary;
+	@media only screen and (max-width: 800px) {
+		padding: 10rem 0rem;
+	}
+	@media only screen and (min-width: 500px) {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-around;
+	}
+	.product {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 2rem;
+		@media only screen and (min-width: 500px) {
+			padding: 0rem;
+			justify-items: flex-start;
+		}
+	}
+	.company {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 2rem;
+		@media only screen and (min-width: 500px) {
+			padding: 0rem;
+			justify-items: flex-start;
+		}
+	}
+	.connect {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 2rem;
+		@media only screen and (min-width: 500px) {
+			padding: 0rem;
+			justify-items: flex-start;
+		}
+	}
+	a {
+		color: $grayish-blue;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		position: relative;
+	}
+	a::before {
+		content: "";
+		position: absolute;
+		width: 3rem;
+		height: 0.2rem;
+	}
+	h5 {
+		font-size: 2.5rem;
+		padding: 3rem;
+		padding-left: 0;
+		color: $white;
+		@media only screen and (min-width: 500px) {
+			padding-top: 0rem;
+		}
+	}
+}

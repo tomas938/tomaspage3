@@ -1,0 +1,93 @@
+.intro {
+	height: 81.5vh;
+	background-image: url(../images/bg-pattern-intro.svg),
+		linear-gradient(to right, $very-light-red-gradient, $light-red-gradient);
+	background-position: center center;
+	border-bottom-left-radius: 10rem;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-light;
+	color: $white;
+	font-size: 1.8rem;
+	header {
+		width: 100%;
+	}
+	&__navigation {
+		width: 77.5%;
+		margin: auto;
+		padding: 6.2rem 0;
+		display: flex;
+		justify-content: space-between;
+		&__logo {
+			display: flex;
+		}
+		ul {
+			display: flex;
+			align-items: center;
+		}
+		li {
+			margin-left: 5rem;
+		}
+
+		a {
+			color: $white;
+		}
+		&__login {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&__description {
+		width: 70%;
+		margin: auto;
+		h1 {
+			padding: 5rem 0;
+			font-size: 6.7rem;
+			text-align: center;
+			font-family: $font-primary;
+			font-weight: $font-weight-primary-bold;
+		}
+		p {
+			text-align: center;
+		}
+		&__buttons {
+			padding: 5rem 0 4rem 0;
+
+			margin: auto;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+.button {
+	cursor: pointer;
+	padding: 1.5rem 4rem;
+	border-radius: 3rem;
+}
+.button--2 {
+	background-color: $white;
+	color: $light-red;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-bold;
+	transition: all 0.3s ease-in-out;
+}
+.button--2:hover {
+	background-color: hsla(0, 0%, 100%, 0.267);
+	color: $white;
+}
+.button--3 {
+	background-color: $white;
+	color: $light-red;
+	font-family: $font-secondary;
+	font-weight: $font-weight-secondary-bold;
+	transition: all 0.3s ease-in-out;
+	padding: 1.5rem 2.5rem;
+}
+.button--3:hover {
+	background-color: hsla(0, 0%, 100%, 0.267);
+	color: $white;
+}
+.button--4 {
+	margin-left: 2rem;
+	border: 1px solid $white;
+	padding: 1.5rem 2.5rem;
+}

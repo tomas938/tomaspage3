@@ -1,0 +1,9 @@
+.mobiles {
+	margin-top: 10rem;
+	background-image: url(../images/bg-pattern-circles.svg),
+		linear-gradient(to right, $very-dark-gray-blue, $very-dark-desaturated-blue);
+	background-repeat: no-repeat;
+	background-position: center center;
+	// background-color: $very-dark-desaturated-blue;
+	height: 40vh;
+}

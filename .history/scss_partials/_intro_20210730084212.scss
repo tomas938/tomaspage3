@@ -1,0 +1,43 @@
+.intro {
+	height: 81.5vh;
+	background-image: url(../images/bg-pattern-intro.svg),
+		linear-gradient(to right, $very-light-red-gradient, $light-red-gradient);
+	background-position: center center;
+	border-bottom-left-radius: 10rem;
+	font-family: $font-primary;
+	font-weight: $font-weight-primary-bold;
+	color: $white;
+	font-size: 1.8rem;
+	header {
+		width: 100%;
+	}
+	&__navigation {
+		width: 77.5%;
+		margin: auto;
+		padding: 6.2rem 0;
+		display: flex;
+		justify-content: space-between;
+		&__logo {
+			display: flex;
+		}
+		ul {
+			display: flex;
+			align-items: flex-end;
+		}
+		li {
+			margin-left: 4rem;
+		}
+
+		a {
+			color: $white;
+		}
+		&__login {
+			display: flex;
+			align-items: flex-end;
+			.login {
+			}
+			.signup {
+			}
+		}
+	}
+}

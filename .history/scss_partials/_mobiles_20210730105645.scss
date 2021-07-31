@@ -1,0 +1,27 @@
+.mobiles {
+	margin-top: 10rem;
+	background-image: url(../images/bg-pattern-circles.svg),
+		linear-gradient(to right, $very-dark-gray-blue, $very-dark-desaturated-blue);
+	background-repeat: no-repeat;
+	background-position: 25% 75%;
+	font-family: $font-secondary;
+	display: flex;
+	position: relative;
+	color: $white;
+	img {
+		position: absolute;
+	}
+	&__content {
+		padding: 10rem 0;
+		width: 40%;
+
+		h2 {
+			font-size: 4rem;
+			font-weight: $font-weight-secondary-light;
+		}
+		p {
+			font-size: 1.7rem;
+			line-height: 3rem;
+		}
+	}
+}

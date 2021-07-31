@@ -1,0 +1,42 @@
+.desktop {
+	padding: 20rem 0;
+	font-family: $font-primary;
+	background-image: url(../images/illustration-laptop-desktop.svg);
+	background-repeat: no-repeat;
+	background-position: bottom 10rem left -28rem;
+	@media only screen and (max-width: 1250px) {
+		background-position: bottom 10rem left -38rem;
+	}
+	@media only screen and (max-width: 1100px) {
+		background-position: bottom 10rem left -50rem;
+	}
+	h2 {
+		text-align: center;
+		font-size: 4rem;
+		color: $very-dark-blue;
+		padding: 17rem 0 10rem 0;
+	}
+	&__container {
+		display: flex;
+		justify-content: flex-end;
+		&__items {
+			width: 50%;
+		}
+		.content {
+			margin-right: 17rem;
+			@media only screen and (max-width: 1350px) {
+				margin-right: 5rem;
+			}
+		}
+		h3 {
+			font-size: 3rem;
+			color: $very-dark-blue;
+		}
+		p {
+			color: $very-dark-grayish-blue;
+			line-height: 3rem;
+			padding: 4rem 0 8rem;
+			font-size: 1.7rem;
+		}
+	}
+}

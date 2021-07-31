@@ -1,0 +1,25 @@
+.about {
+	font-family: $font-primary;
+	h2 {
+		text-align: center;
+		font-size: 4rem;
+		color: $very-dark-blue;
+		padding: 17rem 0 9rem 0;
+	}
+	&__container {
+		display: flex;
+		&__items {
+			width: 50%;
+		}
+		.content {
+		}
+		h3 {
+			font-size: 3rem;
+			color: $very-dark-blue;
+		}
+
+		&__img {
+			width: 50%;
+		}
+	}
+}
