@@ -195,6 +195,7 @@
 	padding: 0 5rem;
 	background-color: $grayish-blue;
 	flex-direction: column;
+
 	a {
 		padding: 2rem;
 		margin-bottom: 1rem;
@@ -237,14 +238,12 @@ svg {
 	}
 }
 .line {
-	width: 40px;
+	width: 30px;
 	height: 5px;
 	background-color: $white;
 	display: block;
+	margin: 8px auto;
 	transition: all 0.3s ease-in-out;
-}
-.line:not(:first-child) {
-	margin-top: 8px;
 }
 #mobileBtn.is-active .line:nth-child(2) {
 	opacity: 0;

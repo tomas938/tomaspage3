@@ -16,6 +16,3 @@ for (let i = 0; i < links.length; i++) {
 		links[i].classList.toggle("activate");
 	});
 }
-hamburger.addEventListener("click", () => {
-	hamburger.classList.toggle("is-active");
-});

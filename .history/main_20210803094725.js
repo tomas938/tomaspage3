@@ -1,5 +1,6 @@
 const mobileBtn = document.querySelector("#mobileBtn");
 const mobileLinks = document.querySelector(".mobile__links");
+const mobileNav = document.querySelector(".intro__navigation__mobile");
 const hamburger = document.querySelector(".intro__navigation__mobile");
 const links = document.querySelectorAll("li");
 window.addEventListener("resize", () => {
@@ -16,6 +17,3 @@ for (let i = 0; i < links.length; i++) {
 		links[i].classList.toggle("activate");
 	});
 }
-hamburger.addEventListener("click", () => {
-	hamburger.classList.toggle("is-active");
-});

@@ -1,6 +1,7 @@
 const mobileBtn = document.querySelector("#mobileBtn");
 const mobileLinks = document.querySelector(".mobile__links");
-const hamburger = document.querySelector(".intro__navigation__mobile");
+const mobileNav = document.querySelector(".intro__navigation__mobile");
+const spans = document.querySelectorAll("span");
 const links = document.querySelectorAll("li");
 window.addEventListener("resize", () => {
 	let windowWidth = window.innerWidth;
@@ -16,6 +17,9 @@ for (let i = 0; i < links.length; i++) {
 		links[i].classList.toggle("activate");
 	});
 }
-hamburger.addEventListener("click", () => {
-	hamburger.classList.toggle("is-active");
+
+mobileNav.addEventListener("click", () => {
+	spans.forEach((span) => {
+		span.classList.toggle(".is-active");
+	});
 });
