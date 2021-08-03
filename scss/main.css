@@ -399,6 +399,9 @@ svg {
 }
 
 .about {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   padding-bottom: 11rem;
   font-family: "Overpass", sans-serif;
   background-image: url(../images/illustration-editor-desktop.svg);
@@ -502,6 +505,9 @@ svg {
 }
 
 .mobiles {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   margin-top: 10rem;
   background-image: url(../images/bg-pattern-circles.svg), -webkit-gradient(linear, left top, right top, from(#2c2d3f), to(#3f4164));
   background-image: url(../images/bg-pattern-circles.svg), linear-gradient(to right, #2c2d3f, #3f4164);
@@ -619,6 +625,9 @@ svg {
 }
 
 .desktop {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   padding: 20rem 0;
   font-family: "Overpass", sans-serif;
   background-image: url(../images/illustration-laptop-desktop.svg);
@@ -745,6 +754,9 @@ svg {
 }
 
 footer {
+  opacity: 0;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
   padding: 10rem 15rem;
   background-color: #25252d;
   color: #c8c8cb;

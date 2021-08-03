@@ -21,42 +21,14 @@ hamburger.addEventListener("click", () => {
 });
 
 /// GSAP ///
-gsap.to(".about", {
+let tl = gsap.timeline({
+	// yes, we can add it to an entire timeline!
 	scrollTrigger: {
-		toggleActions: "play none none reverse",
+		markers: true,
 		trigger: ".about",
-		start: "-30%",
+		start: "top top", // when the top of the trigger hits the top of the viewport
+		end: "+=500", // end after scrolling 500px beyond the start
+		scrub: 1,
+		x: 500, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
 	},
-	y: 0,
-	opacity: 1,
-	duration: 1,
-});
-gsap.to(".mobiles", {
-	scrollTrigger: {
-		toggleActions: "play none none reverse",
-		trigger: ".mobiles",
-		start: "-150%",
-	},
-	y: 0,
-	opacity: 1,
-	duration: 1,
-});
-gsap.to(".desktop", {
-	scrollTrigger: {
-		toggleActions: "play none none reverse",
-		trigger: ".desktop",
-		start: "-40%",
-	},
-	y: 0,
-	opacity: 1,
-	duration: 1,
-});
-gsap.to(".footer", {
-	scrollTrigger: {
-		toggleActions: "play none none reverse",
-		trigger: ".footer",
-		start: "-180%",
-	},
-	opacity: 1,
-	duration: 1,
 });

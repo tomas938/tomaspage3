@@ -23,8 +23,8 @@ hamburger.addEventListener("click", () => {
 /// GSAP ///
 gsap.to(".about", {
 	scrollTrigger: {
-		toggleActions: "play none none reverse",
 		trigger: ".about",
+		markers: true,
 		start: "-30%",
 	},
 	y: 0,
@@ -33,19 +33,9 @@ gsap.to(".about", {
 });
 gsap.to(".mobiles", {
 	scrollTrigger: {
-		toggleActions: "play none none reverse",
 		trigger: ".mobiles",
+		markers: true,
 		start: "-150%",
-	},
-	y: 0,
-	opacity: 1,
-	duration: 1,
-});
-gsap.to(".desktop", {
-	scrollTrigger: {
-		toggleActions: "play none none reverse",
-		trigger: ".desktop",
-		start: "-40%",
 	},
 	y: 0,
 	opacity: 1,
@@ -53,10 +43,11 @@ gsap.to(".desktop", {
 });
 gsap.to(".footer", {
 	scrollTrigger: {
-		toggleActions: "play none none reverse",
 		trigger: ".footer",
-		start: "-180%",
+		markers: true,
+		start: "-40%",
 	},
+	y: 0,
 	opacity: 1,
 	duration: 1,
 });
